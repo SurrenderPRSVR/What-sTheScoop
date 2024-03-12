@@ -42,27 +42,32 @@ h1{
     text-align: center;
 }
 
-/* CSS Stylesheet */
-
-/* Form Container */
+/* Styling the form container */
 .form-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Make container full height of viewport */
-    flex-direction: column; /* Arrange items vertically */
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Form Styles */
+/* Styling the form heading */
 .form-container h2 {
     margin-top: 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
 }
 
+/* Styling labels */
 .form-container label {
     display: block;
     margin-bottom: 5px;
+    color: #555;
 }
 
+/* Styling text inputs */
 .form-container input[type="text"],
 .form-container input[type="date"],
 .form-container input[type="password"] {
@@ -71,9 +76,10 @@ h1{
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding and border don't increase element's width */
 }
 
+/* Styling submit button */
 .form-container input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -85,6 +91,7 @@ h1{
     transition: background-color 0.3s;
 }
 
+/* Hover effect for submit button */
 .form-container input[type="submit"]:hover {
     background-color: #45a049;
 }
